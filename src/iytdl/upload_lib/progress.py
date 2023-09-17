@@ -68,7 +68,7 @@ async def progress(
         speed = current / after
         eta = round((total - current) / speed)
         percentage = round(current / total * 100)
-        progress_bar = f"[{'█' * floor(15 * percentage / 100)}{'░' * floor(15 * (1 - percentage / 100))}]"
+        progress_bar = f"[{'■' * floor(15 * percentage / 100)}{'□' * floor(15 * (1 - percentage / 100))}]"
 
         progress = f"""
 <i>{mode.title()}ing:</i>  <code>{filename}</code>
