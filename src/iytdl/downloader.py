@@ -194,8 +194,8 @@ class Downloader:
                 if total is not None:
                     percentage = round(current / total * 100)
                     progress_bar = (
-                        f"[{'●' * floor(15 * percentage / 100)}"
-                        f"{'○' * floor(15 * (1 - percentage / 100))}]"
+                        f"[{'■' * floor(15 * percentage / 100)}"
+                        f"{'□' * floor(15 * (1 - percentage / 100))}]"
                     )
                     # ---------------------------------------- #
                     progress = f"""
